@@ -207,7 +207,7 @@ a img {
     font-size: 25px; 
     color: #232323;
   }
-  @media (max-width: 1176px){
+  @media (max-width: 1200px){
     .right a {
       margin-left: 15px !important;
       margin-right: 15px  !important;
@@ -221,6 +221,12 @@ a img {
       margin-left: 8px !important;
       margin-right: 8px  !important;
      }  
+     #news_views {
+       width: 25%;
+     }
+     #posts {
+       width: 55%;
+     }
      .topnav {
       padding: 0 !important;
       }
@@ -302,11 +308,9 @@ a img {
     padding: 0 10% 0 10%;
     margin: 0;
     background-color: #283e4a;
-    position: fixed;
+    position: sticky;
     top: 0; 
-    width: 100%; 
   } 
-
   
   .topnav input{
       height: 30px;

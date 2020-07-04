@@ -8,7 +8,7 @@ var posts =[
         date: NaN,
         Promoted: true,
         edited: false,
-        text:"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin sed vehicula nisl, ut viverra purus. Phasellus pretium ex a nibh faucibus, sed posuere augue condimentum. Nulla eleifend consequat augue. Nam ...see more",
+        text:"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin sed vehicula nisl, ut viverra purus. Phasellus pretium ex a nibh faucibus, sed posuere augue condimentum. Nulla eleifend consequat augue. Nam",
         image:"https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcQXRO42mDBdVznDvvuOVqzEq36-ONi8cUcliA&usqp=CAU",
         likes: "800",
         comments:["","","","","","","","","","","","","","",""]
