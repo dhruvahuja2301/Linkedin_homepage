@@ -2,12 +2,101 @@
   margin: 0% 0 0 10%;
   display: flex;
 }
+.fa-chevron-down ,.fa-ellipsis-h {
+  float: right;
+  color: gray;
+}
 #profile_details {
   display: block;
   padding: 10px 20px;
 }
 #profile_content {
   padding: 10px 20px;
+}
+#reactions {
+  padding: 10px;
+  border-bottom: 1px solid gray;
+}
+#reply {
+  padding: 10px;
+  color: grey;
+  font-size: 15px;
+}
+#reply .fa-thumbs-up {
+  transform: scaleX(-1);
+  -webkit-transform: scaleX(-1);
+  -moz-transform: scaleX(-1);
+  font-size: 20px;
+  -ms-transform: scaleX(-1);
+  -o-transform: scaleX(-1);
+}
+#reply .fa-share {
+  font-size: 20px;
+}
+#reply .fa-share-alt {
+  font-size: 20px;
+}
+#reply .fa-location-arrow {
+  font-size: 20px;
+}
+#reply .fa-comment-alt {
+  transform: scaleX(-1);
+  -webkit-transform: scaleX(-1);
+  -moz-transform: scaleX(-1);
+  font-size: 20px;
+  -ms-transform: scaleX(-1);
+  -o-transform: scaleX(-1);
+}
+#reactions .fas{
+  border-radius: 50%;
+  font-size: 10px;
+  color: white;
+}
+#reactions .fas.fa-thumbs-up {
+  font-size: 10px;
+  transform: scaleX(-1);
+  -webkit-transform: scaleX(-1);
+  -moz-transform: scaleX(-1);
+  -ms-transform: scaleX(-1);
+  -o-transform: scaleX(-1);
+  border:  3px solid cornflowerblue;
+  background-color: cornflowerblue;
+}
+#reactions .fas.fa-heart {
+  font-size: 10px;
+  border:  3px solid red;
+  background-color: red;
+}
+#dot,#dot_edited, #likes, #comments {
+  opacity: 0.7;
+}
+#dot {
+  display: inline-block;
+  height: 2px;
+  margin-bottom:3.5px;
+  width: 2px;
+  background-color: #232323;
+  border-radius: 50%;
+}
+#dot_edited {
+  display: inline-block;
+  height: 2px;
+  margin-bottom:3.5px;
+  width: 2px;
+  background-color: #232323;
+  border-radius: 50%;
+}
+#dot_notpromo {
+  display: inline-block;
+  height: 2px;
+  margin-bottom:3.5px;
+  width: 2px;
+  background-color: #232323;
+  border-radius: 50%;
+}
+#reactions .fas.fa-lightbulb {
+  border:  3px solid #ffcc00;
+  background-color: #ffcc00;
 }
 #post_profile_image {
   width: 50px;
@@ -19,29 +108,32 @@
 }
 .header {
   padding-left: 20px;
+  margin-top: 1%;
+  padding-top: 2px;
   padding-right: 20px;
-  opacity: 0.8;
   border-bottom: 1px lightgray solid;
-}
-.fa-ellipsis-h{
-  float: right;
-  color: grey;
+  background-color: #fff;
 }
 #info {
   height: 500px;
   width: 15%;
   background-color: #fff;
 }
+
 #news_views {
   margin-top: 1%;
   width: 30%;
   background-color: #fff;
 }
-#post {
-  margin: 0.5% 1.5% 0 1.5%;
+.post {
+  margin-bottom: 1%;
+  margin-top: 0%;
+  background-color: #fff;
+}
+#posts {
+  margin: 0% 1.5%;
   width: 50%;
   padding: 0;
-  background-color: #fff;
 }
 .fa,.far,.fab{
     font-size: 35px;
@@ -76,6 +168,9 @@
 }
 .fas.fa-caret-down {
   font-size: 15px;
+}
+.topnav .fa-comment-alt,.topnav .fa-bell {
+  font-size: 35px;
 }
 .fab {
   color: royalblue;
@@ -134,11 +229,57 @@ a img {
     .sm-bottom,.sm-hidden {
       display: inline-block;
     }
+    #profile_details {
+      border: 0 !important;
+    }
+    .fa-ellipsis-h {
+      display: block ;
+    }
+    .fa-chevron-down {
+      display: none ;
+    }
+    #md {
+      display: inline-block;
+    }
+    #sm {
+      display: none;
+    }
   }
   @media (max-width: 768px){
     .sm-bottom,.sm-hidden {
       display: none;
     }
+    .bottomnav {
+      display: flex !important;
+    }
+    #info,#news_views{
+      display: none;
+    }
+    #md {
+      display: none;
+    }
+    #sm {
+      display: inline-block;
+    }
+    .fa-ellipsis-h {
+      display: none ;
+    }
+    .fa-chevron-down {
+      display: block;
+    }
+    .container {
+      margin: 0;
+      display: flex;
+    }
+   #posts {
+      margin: 0;
+      width: 100%;
+      padding: 0;
+    }
+    #follow_promo {
+      display: none;
+    }
+
     #profile_image_small {
       display: inline-block;
     }
@@ -161,7 +302,11 @@ a img {
     padding: 0 10% 0 10%;
     margin: 0;
     background-color: #283e4a;
-    }  
+    position: fixed;
+    top: 0; 
+    width: 100%; 
+  } 
+
   
   .topnav input{
       height: 30px;
@@ -199,4 +344,24 @@ a img {
     margin: 0px;
     padding: 0px;
     background-color:lightgray;
+  }
+  .bottomnav {
+    overflow: hidden;
+    padding: 2% 0%;
+    position: fixed;
+    border-top: 2px solid grey;
+    bottom: 0; 
+    width: 100%; 
+    background-color: white;
+    display: none;
+  }  
+  .bottomnav a{
+    color: gray;
+    margin: 0 auto;
+  }
+  .bottomnav a .fa,.far {
+    font-size: 20px;
+  }
+  .bottomnav .active_bottom {
+    color: #283eff;
   }

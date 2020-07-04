@@ -12,7 +12,7 @@
     <div class="topnav">
         <a href="#" class="left" ><img src="https://i.pinimg.com/originals/ab/67/53/ab6753ec1cef75f1cc2052487b1f4059.jpg" id="profile_image_small"></a>
         <a href="#" class="left sm-hidden"><i class="fab fa-linkedin fa-lg"></i></a>
-        <a class="left"><i class="fa fa-search"></i><input type="text" class="mainLoginInput" placeholder="      Search"></a>
+        <a class="left"><i class="fa fa-search"></i> <i class="fa fa-qrcode"></i> <input type="text" class="mainLoginInput" placeholder="      Search"></a>
         
         <div class="right">
             <a class="active sm-bottom" href="#"><i class="fa fa-home"></i></a>
@@ -20,9 +20,6 @@
             <a href="#" class="sm-bottom" ><i class="fa fa-briefcase"></i></a>
             <a href="#" ><i class="far fa-comment-alt" alt=""></i></a>
             <a href="#" class="sm-bottom" ><i class="far fa-bell" alt=""></i></a>
-              
-        <!-- </span>
-        <span class="right"> -->
             <a href="#" ><img src="https://i.pinimg.com/originals/ab/67/53/ab6753ec1cef75f1cc2052487b1f4059.jpg" id="profile_image"></a>
             <a href="#" class="sm-hidden" ><i class="fa fa-th" alt=""><span> Work<i class="fas fa-caret-down"></i> </span></i></a>
             <a href="#" id="premium" class="sm-hidden right"><span>Try Premium Free <div> for 1 Month</div></span></a>
@@ -31,12 +28,13 @@
       <div class="container">
         <div id= "info">
             
-        </div>
-        <div id= "post">
-            <div class="header">
-                <p><strong>Abcd Efhg</strong>,<strong>Ijkl Mnop</strong> and 1000 others connections follow <strong>Linkedin</strong><i class="fas fa-ellipsis-h"></i></p>
-            </div>
+        </div>     
+
+        <div id= "posts">
             <div class="post">
+                <div class="header">
+                    <p><strong>Abcd Efhg</strong>,<strong>Ijkl Mnop</strong> and 1000 others connections follow <strong>Linkedin</strong> <i class="fas fa-chevron-down"></i><i class="fas fa-ellipsis-h"></i></p>
+                </div>
                 <div id="profile_details">
                     <span>
                         <img id="post_profile_image" src="">
@@ -44,18 +42,80 @@
                     <span id="profile_headings">
                         <Strong id="name"> </Strong>
                         <div id="followers"></div>
-                        <div id="time"></div>
+                        <div id="occupation"></div>
+                        <span>
+                            <span id="time"></span>
+                            <span id="dot_edited"></span>
+                            <span id="edited"></span>
+                            <span id="dot_notpromo"></span>
+                            <span id="globe"><i class="fas fa-globe"></i></span>
+                        </span>
                     </span>   
-                    <div id="about">
-                        <i class="fas fa-ellipsis-h"></i>
-                    </div>
                     <div id="follow_promo">
-                        <i class="fa fa-plus"> follow</i>
+                        <i class="fa fa-plus"> Follow</i>
                     </div>
                 </div>
                 <div id="profile_content"></div>
-                <img id="profile_img"> 
-                
+                <img id="post_img"> 
+                <div id="reactions">
+                    <i class="fas fa-thumbs-up"></i>
+                    <i class="fas fa-lightbulb"></i>
+                    <i class="fas fa-heart"></i>
+                    <span id="likes"> </span>
+                    <span id="dot"></span>
+                    <span id="comments"> </span>
+                </div>
+                <div id="reply">
+                    <span><i class="far fa-thumbs-up"></i> Like </span> &nbsp; &nbsp;                   
+                    <span><i class="far fa-comment-alt"></i> Comments </span> &nbsp;  &nbsp;            
+                    <span id="md"><i class="fas fa-share"></i> Share </span>     
+                    <span id="sm"><i class="fas fa-share-alt"></i> Share </span> &nbsp; &nbsp;           
+                    <span><i class="fas fa-location-arrow"></i> Send </span> &nbsp; &nbsp;      
+                    
+                </div>
+            </div>
+            <div class="post">
+                <div class="header">
+                    <p><strong>Abcd Efhg</strong>,<strong>Ijkl Mnop</strong> commented on this <i class="fas fa-chevron-down"></i><i class="fas fa-ellipsis-h"></i></p>
+                </div>
+                <div id="profile_details">
+                    <span>
+                        <img id="post_profile_image" src="">
+                    </span>
+                    <span id="profile_headings">
+                        <Strong id="name"> </Strong>
+                        <div id="followers"></div>
+                        <div id="occupation"></div>
+                            <span>
+                                <span id="time"></span>
+                                <span id="dot_edited"></span>
+                                <span id="edited"></span>
+                                <span id="dot_notpromo"></span>
+                                <span id="globe"><i class="fas fa-globe"></i></span>
+                            </span>
+                    </span>   
+                    <div id="follow_promo">
+                        <i class="fa fa-plus"> Follow</i>
+                    </div>
+                </div>
+                <div id="profile_content"></div>
+                <img id="post_img"> 
+                <div id="reactions">
+                    <i class="fas fa-thumbs-up"></i>
+                    <i class="fas fa-lightbulb"></i>
+                    <i class="fas fa-heart"></i>
+                    <span id="likes"> </span>
+                    <span id="dot"></span>
+                    <span id="comments"> </span>
+                </div>
+                <div id="reply">
+                    <span><i class="far fa-thumbs-up"></i> Like </span> &nbsp; &nbsp;                   
+                    <span><i class="far fa-comment-alt"></i> Comments </span> &nbsp;  &nbsp;            
+                    <span id="md"><i class="fas fa-share"></i> Share </span> &nbsp; &nbsp;       
+                    <span id="sm"><i class="fas fa-share-alt"></i> Share </span> &nbsp; &nbsp;       
+                    <span><i class="fas fa-location-arrow"></i> Send </span> &nbsp; &nbsp;      
+                    
+                </div>
             </div>
         </div>
 
@@ -63,6 +123,13 @@
 
         </div>
     </div>
+    <div class="bottomnav">
+        <a class="active_bottom" href="#"><i class="fa fa-home"></i></a>
+        <a href="#"><i class="fa fa-user-friends" alt=""></i></a>
+        <a href="#"><i class="fa fa-plus-circle" alt=""></i></a>
+        <a href="#"><i class="far fa-bell" alt=""></i></a>
+        <a href="#"><i class="fa fa-briefcase"></i></a>
+      </div>    
     <script src="styles.js"></script>
 </body>
 </html>
