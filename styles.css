@@ -184,7 +184,7 @@ a img {
   width: 35px;
   height: 35px;
 }
-.mainLoginInput{
+.searchLogin{
     padding: 0px;
     font-size: 15px;
     background-color: lightgray;
@@ -192,14 +192,14 @@ a img {
     outline: 0;
   }
 
-  .fa-search {
+  .topnav .fa-search {
     position: absolute; 
     margin-top: 10px;
     margin-left: 5px;
     font-size: 15px; 
     color: #232323;
   }
-  .fa-qrcode {
+  .topnav .fa-qrcode {
     display: none;
     position: absolute; 
     margin-top: 5px;
@@ -251,8 +251,50 @@ a img {
       display: none;
     }
   }
+
   @media (max-width: 768px){
-    .sm-bottom,.sm-hidden {
+    .sm_topnav {
+      display: inline-flex !important;
+      width: 100%;
+      margin: 0 auto;
+    }
+    .sm_topnav #sm_profile_image {
+      height: 40px;
+      width: 40px;
+      border-radius: 50%;
+      margin: 5px;
+    }
+    .sm_topnav .fa-qrcode {
+      position: absolute;
+      font-size: 25px;
+      margin-top: 5px;
+      padding: 6px 6px 6px 15px;
+      color: gray;
+      background-color: white;
+    }
+    .sm_topnav form {
+      width: 100%;
+    }
+    .sm_topnav .fa-search {
+      position: absolute;
+      font-size: 20px;
+      color: gray;
+      padding: 15px ;
+    }
+    .sm_topnav .far {
+      font-size: 30px;
+      padding: 10px;
+      color: #606060;
+    }
+    .sm_topnav #sm_SearchInput {
+      width: 85%;
+      margin: 5px 0 5px 2px;
+      height: 35px;
+      border: 0px;
+      font-size: 20px;
+      color: gray;
+    }
+    .topnav {
       display: none;
     }
     .bottomnav {
@@ -284,25 +326,9 @@ a img {
     }
     #follow_promo {
       display: none;
-    }
-
-    #profile_image_small {
-      display: inline-block;
-    }
-    #profile_image {
-      display: none;
-    }
-    .mainLoginInput{
-      min-width: 190px;
-    }
-    .fa-qrcode {
-      display: inline;
-    }
-    .fa-comment-alt {
-      padding-top: 10px;
-      width: 30px;
-    }  
+    } 
   }
+
 .topnav {
     overflow: hidden;
     padding: 0 10% 0 10%;
@@ -311,7 +337,14 @@ a img {
     position: sticky;
     top: 0; 
   } 
-  
+  .sm_topnav {
+    display: none;
+    overflow: hidden;
+    margin: 0;
+    background-color: #64a9ff;
+    position: sticky;
+    top: 0; 
+  } 
   .topnav input{
       height: 30px;
       padding-left: 0;
